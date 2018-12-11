@@ -1,5 +1,5 @@
 ﻿using System;
-using Nunit.Framework;
+using NUnit.Framework;
 using FangsClassLibrary;
 
 
@@ -21,19 +21,19 @@ namespace FangsClassLibraryTests
 
             Assert.That(result, Is.EqualTo(4));
 
-            var testFloat = 2.4f;
-            result = Calculations.DoubleANumber(testFloat);
+            var testDouble = 2.4d;
+            var resultDouble = Calculations.DoubleANumber(testDouble);
 
-            Assert.That(result, Is.EqualTo(2.8f));
+            Assert.That(resultDouble, Is.EqualTo(2.8f));
         }
 
         [Test]
         public void GetCelsiusFromFarenheitTest()
         {
-            var farenheitTemp = 100f;
-            var expectedApproximateCelsius = 38;
+            var farenheitTemp = 100d;
+            var expectedApproximateCelsius = 38d;
 
-            float result = Calculations.GetCelsiusFromFarenheit(farenheitTemp);
+            var result = Calculations.GetCelsiusFromFarenheit(farenheitTemp);
             result = Math.Round(result, 0);
 
             Assert.That(result, Is.EqualTo(expectedApproximateCelsius));
@@ -43,10 +43,10 @@ namespace FangsClassLibraryTests
         [Test]
         public void GetFarenheitFromCelsiusTest()
         {
-            var farenheitTemp = 100f;
-            var celsiusTemp = 38;
+            var farenheitTemp = 100d;
+            var celsiusTemp = 38d;
 
-            float result = Calculations.GetFarenheitFromCelsius(celsiusTemp);
+            var result = Calculations.GetFarenheitFromCelsius(celsiusTemp);
             result = Math.Round(result, 0);
 
             Assert.That(result, Is.EqualTo(farenheitTemp));
