@@ -19,14 +19,14 @@ namespace ConsoleApp1
             
             
                 Console.WriteLine("Please enter your number:");
-                num1 = Console.Read();
+                num1 = Int32.Parse(Console.ReadLine());
                 Console.WriteLine("1 - double a number");
                 Console.WriteLine("2 - Convert to Celcius");
                 Console.WriteLine("3 - Convert to Farenheit");
                 Console.WriteLine("4 - Age in Dog Years");
                 Console.WriteLine("5 - Exit program");
                 Console.WriteLine("Please enter your choice:");
-                calc = Console.Read();
+                calc = Int32.Parse(Console.ReadLine());
 
                 SelectiveCalc choice;
                 choice = (SelectiveCalc)calc;
