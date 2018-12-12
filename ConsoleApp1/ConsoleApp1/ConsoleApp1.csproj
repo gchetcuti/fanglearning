@@ -48,5 +48,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\FangsClassLibrary\FangsClassLibrary\FangsClassLibrary.csproj">
+      <Project>{70249f39-c737-44c8-855a-3324b1496b47}</Project>
+      <Name>FangsClassLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FandsClassLibraryTests\FangsClassLibraryTests\FangsClassLibraryTests.csproj">
+      <Project>{f2d019a9-75c1-4fa8-9d8d-94845b13daaa}</Project>
+      <Name>FangsClassLibraryTests</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

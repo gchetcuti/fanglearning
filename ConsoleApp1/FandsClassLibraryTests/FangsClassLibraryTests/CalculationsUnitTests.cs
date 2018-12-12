@@ -1,4 +1,7 @@
 ﻿using System;
+using NUnit.Framework;
+using FangsClassLibrary;
+
 
 
 namespace FangsClassLibraryTests
@@ -22,7 +25,7 @@ namespace FangsClassLibraryTests
             var testDouble = 2.4d;
             var resultDouble = Calculations.DoubleANumber(testDouble);
 
-            Assert.That(resultDouble, Is.EqualTo(2.8f));
+            Assert.That(resultDouble, Is.EqualTo(4.8d));
         }
 
         [Test]
